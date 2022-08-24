@@ -6,7 +6,8 @@
         {
             Game game = new Game();
             game.DieRoll();
-            Console.WriteLine(game.DieRoll());
+             game.Play();
+            
         }
     }
 }
