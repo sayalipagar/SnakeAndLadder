@@ -8,12 +8,14 @@ namespace SnakeandLadder
 {
     internal class Game
     {
-       public int playerPosition = 0;
+       public int playerPosition = 0,count =0;
         const int NO_PLAY = 0, LADDER = 1, SNAKE = 2,WINNINGPOSITION=100;
         Random random = new Random();
         public int DieRoll()
         {
+            count++;
             int dieCount= random.Next(1, 7);
+            Console.WriteLine("Die Roll Value" + " - " + count + "\n player Position" + " " + playerPosition);
             return dieCount;
         }
         public void Play()
