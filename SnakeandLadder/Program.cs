@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Snake And Ladder Problem Statement!");
+            Game game = new Game();
+            Console.WriteLine(game.playerPosition);
         }
     }
 }
